@@ -1,0 +1,31 @@
+.card-custom {
+    width: 100%;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+  
+.card-front {
+    transform: rotateY(0deg);
+    background-color: aquamarine;
+}
+  
+.card-back {
+    transform: rotateY(180deg);
+    background-color: coral;
+}
+  
+.card-custom:hover .card-front {
+    transform: rotateY(-180deg);
+}
+  
+.card-custom:hover .card-back {
+    transform: rotateY(0deg);
+} 
