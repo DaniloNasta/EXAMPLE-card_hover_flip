@@ -14,12 +14,18 @@
   
 .card-front {
     transform: rotateY(0deg);
-    background-color: aquamarine;
+    background: hsla(247, 23%, 40%, 1);
+    background: linear-gradient(45deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(247, 23%, 40%, 1) 0%, hsla(42, 100%, 66%, 1) 100%);
 }
   
 .card-back {
     transform: rotateY(180deg);
-    background-color: coral;
+    background: hsla(159, 35%, 45%, 1);
+    background: linear-gradient(45deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
 }
   
 .card-custom:hover .card-front {
